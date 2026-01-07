@@ -7,16 +7,16 @@ keep_prev_brightness: false
 keep_prev_contrast: false
 logger_level: info
 
-flags: ["FCI A1", "FCI A2", "FCI B1", "FCI B2", "FCI C", "FCI D", "FCI E", "FCI F", "ill-positioned", "extended radiograph", 
-          "compressed radiograph", "distracted radiograph",
-          "poor quality", "poor resolution", "not relevant radiograph", "CFHO",
-          "Scler CrAE"]
+flags: ["NO artrose", "Bony spurs", "Mild OA", "Moderate OA", "Severe OA",
+        "ill-positioned", "extended radiograph", 
+        "compressed radiograph", "distracted radiograph",
+        "poor quality", "poor resolution", "not relevant radiograph"]
 label_flags: null
-labels: ["Morgan line", "left sclerotic point", "right sclerotic point", 
-          "left best fitting circle", "right best fitting circle",
-          "left caudal point", "right caudal point", 
-          "connection line",
-          "left shifted circle", "right shifted circle"]
+labels: ["Left sclerotic point", "Right sclerotic point",
+         "Left CL point", "Right CL point",
+         "Left caudal point", "Right caudal point",
+         "Left best fitting femoral circle", "Right best fitting femoral circle",
+         "Left best fitting acetabular circle", "Right best fitting acetabular circle"]
 file_search: null
 sort_labels: true
 validate_label: null
@@ -35,7 +35,7 @@ shape:
   select_line_color: [255, 255, 255, 255]
   select_fill_color: [0, 255, 0, 155]
   hvertex_fill_color: [255, 255, 255, 255]
-  point_size: 6
+  point_size: 2
 
 # main
 flag_dock:
